@@ -1,0 +1,6 @@
+@GenericDataService_HostAddress = http://localhost:5148
+
+GET {{GenericDataService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
