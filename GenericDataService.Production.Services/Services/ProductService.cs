@@ -1,7 +1,7 @@
 ﻿using GenericDataService.EntityModel.Production;
+using GenericDataService.GenericService;
 using GenericDataService.GenericService.Attributes;
 using GenericDataService.GenericService.Models;
-using GenericDataService.Infrastructure;
 using GenericDataService.Infrastructure.Pipeline;
 using GenericDataService.Production.Infrastructure;
 using System;

@@ -14,6 +14,8 @@ namespace GenericDataService.Production.Infrastructure
         public ProductionDbContext(DbContextOptions<ProductionDbContext> options) : base(options) { }
 
         public DbSet<Product> Products => Set<Product>();
+        public DbSet<CommonCodeMaster> CommonCodeMasters => Set<CommonCodeMaster>();
+        public DbSet<CommonCodeDetail> CommonCodeDetails => Set<CommonCodeDetail>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
         }

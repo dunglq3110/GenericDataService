@@ -23,13 +23,14 @@ namespace GenericDataService.GenericService
             services.AddDbContext<GenericServiceDbContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IPostStep, AuditStep>();
-            services.AddScoped<IPostStep, NotificationStep>();
+            //services.AddScoped<IPostStep, AuditStep>();
+            //services.AddScoped<IPostStep, NotificationStep>();
 
-            services.AddScoped<IPreStep, AuthorizationStep>();
-            services.AddScoped<IPreStep, ValidationStep>();
+            //services.AddScoped<IPreStep, AuthorizationStep>();
+            //services.AddScoped<IPreStep, ValidationStep>();
 
             services.AddScoped<ServicePipeline>();
+
             services.AddScoped<EventRegistryService>();
 
 
